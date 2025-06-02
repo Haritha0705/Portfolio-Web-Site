@@ -1,54 +1,35 @@
-import { useEffect, useState } from "react";
-import { Sun, Moon } from 'lucide-react';
+import React from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import HomePage from "./Sections/HomePage.tsx";
+import AboutPage from "./Sections/AboutPage.tsx";
+import SkillsPage from "./Sections/SkillsPage.tsx";
+import ProjectPage from "./Sections/ProjectPage.tsx";
+import GetInTouchPage from "./Sections/GetInTouchPage.tsx";
+import NotFoundPage from "./Sections/NotFoundPage.tsx";
+import NavBar from "./Components/NavBar.tsx";
+import Footer from "./Components/Footer.tsx";
 
-function App() {
-    const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if (savedTheme === 'light' || savedTheme === 'dark') {
-            setTheme(savedTheme);
-        } else if (systemPrefersDark) {
-            setTheme('dark');
-        }
-    }, []);
-
-    useEffect(() => {
-        const html = document.documentElement;
-        if (theme === 'dark') {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
-
-        localStorage.setItem('theme', theme);
-    }, [theme]);
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
-
+const App: React.FC = () => {
     return (
-        <section className="p-4">
-            <button
-                onClick={toggleTheme}
-                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-                className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-black dark:text-white transition"
-            >
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+        <BrowserRouter>
+            <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+                <NavBar/>
+                <main>
+                    {/*className={'pt-[70px]'}*/}
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                        <Route path='/about' element={<AboutPage />} />
+                        <Route path='/skills' element={<SkillsPage />} />
+                        <Route path='/projects' element={<ProjectPage />} />
+                        <Route path='/getintouch' element={<GetInTouchPage />} />
+                        <Route path='*' element={<NotFoundPage />} />
+                    </Routes>
+                </main>
+                <Footer/>
+            </div>
+        </BrowserRouter>
 
-            <h1 className="text-3xl font-bold mt-4 text-black dark:text-white">
-                Theme is {theme}
-            </h1>
-
-            <p className="text-gray-700 dark:text-gray-300 mt-2">
-                This text color changes with the theme.
-            </p>
-        </section>
     );
-}
+};
 
 export default App;
