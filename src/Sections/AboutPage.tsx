@@ -8,7 +8,7 @@ const AboutPage: React.FC = () => {
         <section className="w-full min-h-screen pt-[80px] flex flex-col justify-around px-72 bg-white dark:bg-black transition-colors">
             <Title title={'About Me'} />
 
-            <div className="flex flex-col md:flex-row justify-center gap-6 items-stretch mt-10">
+            <div className="flex flex-col md:flex-row justify-center gap-6 items-stretch mt-10 ">
                 <AboutCard icon={<Code className={'text-blue-500'}  size={40}/>} text={'I believe in clean, readable code and user-centered design.My goal is to create applications that are not only functional but also intuitive and enjoyable to use. I\'m passionate about web standards, accessibility, and performance optimization.'} title={'My Approach'}/>
                 <AboutCard icon={<GraduationCap className={'text-blue-500'} size={40}/>} text={'BSc in Computer Science \nUniversity of Technology \n2015 - 2019 \nFull Stack Web Development \nTech Bootcamp \n2020'} title={'Education'}/>
                 <AboutCard icon={<LucideShoppingBag className={'text-blue-500'} size={40}/>} text={'Senior Frontend Developer \nTechCorp Inc.\n2021 - Present \nWeb Developer \nDigital Solutions Agency \n2019 - 2021'} title={'Experience'}/>
