@@ -1,14 +1,12 @@
 import React from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import HomePage from "./Sections/HomePage.tsx";
 import AboutPage from "./Sections/AboutPage.tsx";
 import SkillsPage from "./Sections/SkillsPage.tsx";
 import ProjectPage from "./Sections/ProjectPage.tsx";
 import GetInTouchPage from "./Sections/GetInTouchPage.tsx";
-import NotFoundPage from "./Sections/NotFoundPage.tsx";
 import NavBar from "./Components/NavBar.tsx";
 import Footer from "./Components/Footer.tsx";
-import HomeNew from "./Sections/HomeNew.tsx";
 
 const App: React.FC = () => {
     return (
@@ -26,15 +24,7 @@ const App: React.FC = () => {
                 <Footer/>
             </div>
         </BrowserRouter>
-        // <>
-        //     <NavBar/>
-        //     <HomePage />
-        //     <AboutPage />
-        //     <SkillsPage />
-        //     <ProjectPage />
-        //     <GetInTouchPage />
-        //     <Footer/>
-        // </>
+
 
     );
 };
