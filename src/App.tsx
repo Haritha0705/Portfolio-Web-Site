@@ -8,6 +8,8 @@ import GetInTouchPage from "./Sections/GetInTouchPage.tsx";
 import NavBar from "./Components/NavBar.tsx";
 import Footer from "./Components/Footer.tsx";
 
+
+
 const App: React.FC = () => {
     return (
         <BrowserRouter>
