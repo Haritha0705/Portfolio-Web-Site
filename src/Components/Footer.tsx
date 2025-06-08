@@ -8,14 +8,11 @@ const Footer: React.FC = () => {
     };
 
     return (
-        <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-10 px-4 sm:px-10">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
+        <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-4 px-4 sm:px-10">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
 
-                {/* Left (Optional Placeholder for social icons or extra info) */}
-                <div></div>
-
-                {/* Center Footer Text */}
-                <div className="text-center text-xs text-gray-500 dark:text-gray-400">
+                {/* Footer Text */}
+                <div className="text-center md:text-left text-sm text-gray-500 dark:text-gray-400">
                     © {new Date().getFullYear()} Haritha. All rights reserved.
                 </div>
 
@@ -24,12 +21,10 @@ const Footer: React.FC = () => {
                     <button
                         onClick={scrollToTop}
                         className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition"
-                        aria-label="Scroll to Top"
-                    >
+                        aria-label="Scroll to Top">
                         <ArrowUp className="text-blue-500 dark:text-blue-400" />
                     </button>
                 </div>
-
             </div>
         </footer>
     );

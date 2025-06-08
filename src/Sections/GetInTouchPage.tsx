@@ -5,7 +5,7 @@ import Button from "../Components/Button.tsx";
 
 const GetInTouchPage: React.FC = () => {
     return (
-        <section className="w-full pt-20 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
+        <section id="getintouch" className="w-full pt-20 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
             {/* Title + Description */}
             <div className="max-w-3xl mx-auto text-center mb-12">
                 <Title title="Get In Touch" />
@@ -90,7 +90,7 @@ const GetInTouchPage: React.FC = () => {
                         text="Send Message"
                         bgColor="bg-blue-500"
                         className="flex items-center gap-2 px-6 py-3 rounded-lg text-white dark:text-black hover:opacity-90 transition-all"
-                        icon={<Send className="text-white" />}
+                        icon={<Send className="text-white dark:text-black"/>}
                     />
                 </div>
             </div>

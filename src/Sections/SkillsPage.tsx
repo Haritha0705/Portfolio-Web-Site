@@ -4,7 +4,7 @@ import SkillCard from "../Components/SkillCard.tsx";
 
 const SkillsPage: React.FC = () => {
     return (
-        <section className="w-full pt-20 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
+        <section id="skill" className="w-full pt-20 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
             {/* Title + Description */}
             <div className="max-w-3xl mx-auto text-center mb-12">
                 <Title title="My Skills" />
@@ -23,13 +23,13 @@ const SkillsPage: React.FC = () => {
                         { skill: "JavaScript", value: 92 },
                         { skill: "TypeScript", value: 85 },
                         { skill: "Dart", value: 95 },
+                        { skill: "HTML5", value: 95 },
+                        { skill: "CSS3/SCSS", value: 90 },
                     ]}
                 />
                 <SkillCard
                     title={"Web Development"}
                     skills={[
-                        { skill: "HTML5", value: 95 },
-                        { skill: "CSS3/SCSS", value: 90 },
                         { skill: "React", value: 85 },
                         { skill: "Next.js", value: 80 },
                         { skill: "Node.js", value: 95 },
@@ -42,8 +42,9 @@ const SkillsPage: React.FC = () => {
                 <SkillCard
                     title={"Mobile Development"}
                     skills={[
-                        { skill: "Swift", value: 90 },
                         { skill: "Flutter", value: 92 },
+                        { skill: "Swift", value: 90 },
+                        { skill: "Kotlin", value: 92 },
                     ]}
                 />
                 <SkillCard

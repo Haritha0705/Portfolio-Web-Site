@@ -5,7 +5,7 @@ import { Code, GraduationCap, LucideShoppingBag } from "lucide-react";
 
 const AboutPage: React.FC = () => {
     return (
-        <section className="w-full min-h-screen pt-[80px] px-4 sm:px-8 md:px-12 lg:px-24 xl:px-36 2xl:px-48 bg-white dark:bg-black transition-colors duration-300 font-sans">
+        <section id="about" className="w-full min-h-screen pt-[80px] px-4 sm:px-8 md:px-12 lg:px-24 xl:px-36 2xl:px-48 bg-white dark:bg-black transition-colors duration-300 font-sans">
             {/* Title */}
             <div className="text-center">
                 <Title title="About Me" />

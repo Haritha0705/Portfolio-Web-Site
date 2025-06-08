@@ -61,7 +61,7 @@ const ProjectPage: React.FC = () => {
             : projects.filter((project) => project.category === activeCategory);
 
     return (
-        <section className="w-full pt-[80px] flex flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
+        <section id="project" className="w-full pt-[80px] flex flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
 
             {/* Title + Description */}
             <div className="max-w-3xl text-center">
