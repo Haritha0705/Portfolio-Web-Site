@@ -36,14 +36,14 @@ const HomePage: React.FC = () => {
                         text="View my work"
                         bgColor="bg-blue-600 dark:bg-blue-500"
                         onClick={handleProjectsClick}
-                        className="text-white justify-between gap-3 items-center flex"
+                        className="text-white dark:text-gray-100 justify-between gap-3 items-center flex"
                         icon={<ArrowRight />}
                     />
                     <Button
                         text="Download CV"
                         bgColor="bg-white dark:bg-gray-800"
                         onClick={downloadCV}
-                        className="justify-between gap-3 items-center flex border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-500"
+                        className="justify-between gap-3 items-center flex border border-blue-600 dark:border-blue-500 text-blue-600  dark:text-blue-500"
                         icon={<Download />}
                     />
                 </div>

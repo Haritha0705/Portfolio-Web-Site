@@ -66,7 +66,7 @@ const ProjectPage: React.FC = () => {
             {/* Title + Description */}
             <div className="max-w-3xl text-center">
                 <Title title="My Projects" />
-                <p className="mt-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                     Here are some of my recent projects. Each one was carefully crafted to solve specific problems and showcase different skills in my toolkit.
                 </p>
             </div>
@@ -80,8 +80,8 @@ const ProjectPage: React.FC = () => {
                         className={`px-6 py-2 rounded-3xl text-sm font-medium cursor-pointer transition-all 
               ${
                             activeCategory === category
-                                ? "bg-blue-600 text-white"
-                                : "bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-100"
+                                ? "bg-blue-600 dark:bg-blue-500 text-white dark:text-black"
+                                : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 "
                         }`}
                     >
                         {category}
@@ -105,7 +105,7 @@ const ProjectPage: React.FC = () => {
             {/* See More Button */}
             <Button
                 text="See More on GitHub"
-                bgColor="bg-black dark:bg-white"
+                bgColor="bg-blue-600 dark:bg-blue-500"
                 className="flex items-center gap-3 px-6 py-2 rounded-lg text-white dark:text-black hover:opacity-90 transition-all"
             />
         </section>
