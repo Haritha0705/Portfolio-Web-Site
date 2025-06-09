@@ -67,8 +67,7 @@ const SkillsPage: React.FC = () => {
                     {["Redux", "Tailwind CSS", "Material UI", "AWS", "Firebase", "Vercel", "Cypress"].map((tech) => (
                         <div
                             key={tech}
-                            className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-3xl py-1 px-4 text-sm font-medium"
-                        >
+                            className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-3xl py-1 px-4 text-sm font-medium">
                             {tech}
                         </div>
                     ))}
