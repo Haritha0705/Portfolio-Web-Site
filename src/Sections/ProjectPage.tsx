@@ -97,8 +97,7 @@ const ProjectPage: React.FC = () => {
                         title={project.title}
                         description={project.description}
                         imageUrl={project.imageUrl}
-                        category={project.category}
-                    />
+                        category={project.category}/>
                 ))}
             </div>
 
