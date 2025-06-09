@@ -8,7 +8,7 @@ const SkillsPage: React.FC = () => {
             {/* Title + Description */}
             <div className="max-w-3xl mx-auto text-center mb-12">
                 <Title title="My Skills" />
-                <p className="mt-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                     I've worked with a variety of technologies in the web development world. Here's an overview of my technical skills and proficiency levels.
                 </p>
             </div>
@@ -60,14 +60,14 @@ const SkillsPage: React.FC = () => {
 
             {/* Other Technologies */}
             <div className="mt-12 text-center">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-50 mb-4">
                     Other Technologies I Work With
                 </h3>
                 <div className="flex flex-wrap justify-center gap-3">
                     {["Redux", "Tailwind CSS", "Material UI", "AWS", "Firebase", "Vercel", "Cypress"].map((tech) => (
                         <div
                             key={tech}
-                            className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-3xl py-1 px-4 text-sm font-medium"
+                            className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-3xl py-1 px-4 text-sm font-medium"
                         >
                             {tech}
                         </div>

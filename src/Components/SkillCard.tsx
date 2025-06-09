@@ -12,12 +12,12 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ title, skills }) => {
     return (
-        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 transition-all duration-300 w-full">
+        <div className="bg-gray-100 dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-all duration-300 w-full">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-5">{title}</h3>
 
             {skills.map(({ skill, value }, idx) => (
                 <div key={idx} className="mb-5">
-                    <div className="flex justify-between mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">
+                    <div className="flex justify-between mb-1 text-sm font-medium text-gray-600 dark:text-gray-300">
                         <span>{skill}</span>
                         <span>{value}%</span>
                     </div>
