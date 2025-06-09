@@ -20,9 +20,9 @@ const Footer: React.FC = () => {
                 <div className="flex justify-center md:justify-end">
                     <button
                         onClick={scrollToTop}
-                        className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+                        className="bg-blue-600 dark:bg-blue-500 p-3 rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 transition"
                         aria-label="Scroll to Top">
-                        <ArrowUp className="text-blue-500 dark:text-blue-400" />
+                        <ArrowUp className="text-white dark:text-gray-100" />
                     </button>
                 </div>
             </div>

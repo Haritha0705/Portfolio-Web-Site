@@ -80,7 +80,7 @@ const ProjectPage: React.FC = () => {
                         className={`px-6 py-2 rounded-3xl text-sm font-medium cursor-pointer transition-all 
               ${
                             activeCategory === category
-                                ? "bg-blue-600 dark:bg-blue-500 text-white dark:text-black"
+                                ? "bg-blue-600 dark:bg-blue-500 text-white dark:text-gray-100"
                                 : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 "
                         }`}
                     >
@@ -105,7 +105,7 @@ const ProjectPage: React.FC = () => {
             <Button
                 text="See More on GitHub"
                 bgColor="bg-blue-600 dark:bg-blue-500"
-                className="flex items-center gap-3 px-6 py-2 rounded-lg text-white dark:text-black hover:opacity-90 transition-all"
+                className="flex items-center gap-3 px-6 py-2 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
             />
         </section>
     );

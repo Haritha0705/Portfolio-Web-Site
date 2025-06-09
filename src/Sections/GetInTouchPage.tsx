@@ -21,8 +21,8 @@ const GetInTouchPage: React.FC = () => {
                     <h4 className="text-xl font-semibold text-black dark:text-white">Contact Information</h4>
 
                     <div className="flex items-start gap-4">
-                        <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full">
-                            <LucideMail className="text-blue-600 dark:text-blue-500" />
+                        <div className="bg-blue-600 dark:bg-blue-500 p-3 rounded-full">
+                            <LucideMail className="text-white dark:text-gray-100" />
                         </div>
                         <div>
                             <p className="text-gray-600 dark:text-gray-300 font-medium">Email</p>
@@ -31,8 +31,8 @@ const GetInTouchPage: React.FC = () => {
                     </div>
 
                     <div className="flex items-start gap-4">
-                        <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full">
-                            <Phone className="text-blue-600 dark:text-blue-500" />
+                        <div className="bg-blue-600 dark:bg-blue-500 p-3 rounded-full">
+                            <Phone className="text-white dark:text-gray-100" />
                         </div>
                         <div>
                             <p className="text-gray-600 dark:text-gray-300 font-medium">Phone</p>
@@ -41,8 +41,8 @@ const GetInTouchPage: React.FC = () => {
                     </div>
 
                     <div className="flex items-start gap-4">
-                        <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full">
-                            <LucideMapPin className="text-blue-600 dark:text-blue-500" />
+                        <div className="bg-blue-600 dark:bg-blue-500 p-3 rounded-full">
+                            <LucideMapPin className="text-white dark:text-gray-100" />
                         </div>
                         <div>
                             <p className="text-gray-600 dark:text-gray-300 font-medium">Location</p>
@@ -90,8 +90,8 @@ const GetInTouchPage: React.FC = () => {
                     <Button
                         text="Send Message"
                         bgColor="bg-blue-600 dark:bg-blue-500"
-                        className="flex items-center gap-2 px-6 py-3 rounded-lg text-white dark:text-black hover:opacity-90 transition-all"
-                        icon={<Send className="text-white dark:text-black"/>}
+                        className="flex items-center gap-2 px-6 py-3 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
+                        icon={<Send/>}
                     />
                 </div>
             </div>
