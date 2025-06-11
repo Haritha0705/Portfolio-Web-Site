@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Title from "../Components/Title.tsx";
 import { LucideMail, Phone, LucideMapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
 import Button from "../Components/Button.tsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -19,6 +20,27 @@ const fadeUp = {
 };
 
 const GetInTouchPage: React.FC = () => {
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (!form.current) return;
+
+        emailjs
+            .sendForm('service_34zfypo', 'template_nyy0wa9', form.current, {
+                publicKey: '38MDTyOwA_dN38vv0',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
         <section
             id="getintouch"
@@ -109,7 +131,9 @@ const GetInTouchPage: React.FC = () => {
                 </motion.div>
 
                 {/* Contact Form */}
-                <motion.div
+                <motion.form
+                    ref={form}
+                    onSubmit={sendEmail}
                     className="space-y-6"
                     initial="hidden"
                     whileInView="visible"
@@ -120,33 +144,46 @@ const GetInTouchPage: React.FC = () => {
                     <h3 className="text-xl font-semibold text-black dark:text-white">Send Me a Message</h3>
 
                     <div className="space-y-4">
-                        {["Your Name", "Your Email", "Subject"].map((label, index) => (
-                            <motion.div key={label} variants={fadeUp} custom={7 + index}>
-                                <label className="block text-sm font-medium text-gray-600 dark:text-gray-300">{label}</label>
+                        {[
+                            { label: "Your Name", name: "user_name", type: "text" },
+                            { label: "Your Email", name: "user_email", type: "email" },
+                            { label: "Subject", name: "subject", type: "text" },
+                        ].map((input, index) => (
+                            <motion.div key={input.name} variants={fadeUp} custom={7 + index}>
+                                <label className="block text-sm font-medium text-gray-600 dark:text-gray-300">
+                                    {input.label}
+                                </label>
                                 <input
-                                    type={label === "Your Email" ? "email" : "text"}
+                                    name={input.name}
+                                    type={input.type}
+                                    required
                                     className="w-full text-gray-600 dark:text-gray-400 px-4 py-2 mt-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-600"
                                 />
                             </motion.div>
                         ))}
+
                         <motion.div variants={fadeUp} custom={10}>
                             <label className="block text-sm font-medium text-gray-600 dark:text-gray-300">Message</label>
                             <textarea
+                                name="message"
                                 rows={4}
+                                required
                                 className="w-full px-4 text-gray-600 dark:text-gray-400 py-2 mt-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-600"
                             />
                         </motion.div>
                     </div>
 
                     <motion.div variants={fadeUp} custom={11}>
-                        <Button
-                            text="Send Message"
-                            bgColor="bg-blue-600 dark:bg-blue-500"
-                            className="flex items-center gap-2 px-6 py-3 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
-                            icon={<Send />}
-                        />
+                        <button type="submit">
+                            <Button
+                                text="Send Message"
+                                bgColor="bg-blue-600 dark:bg-blue-500"
+                                className="flex items-center gap-2 px-6 py-3 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
+                                icon={<Send />}
+                            />
+                        </button>
                     </motion.div>
-                </motion.div>
+                </motion.form>
             </div>
         </section>
     );
