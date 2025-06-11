@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Moon, Sun, MenuIcon, X  } from "lucide-react";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
     const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -38,7 +39,11 @@ const NavBar = () => {
     ];
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800">
+        <motion.nav
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800">
             <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
                 <div className="text-xl font-bold dark:text-white">Haritha</div>
 
@@ -74,13 +79,18 @@ const NavBar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white dark:bg-gray-900">
+                <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    className="md:hidden bg-white dark:bg-gray-900">
                     <ul className="flex flex-col items-center space-y-4 py-4">
                         {links.map((link) => (
                             <li key={link.label}>
                                 <a
                                     href={link.href}
-                                    className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                    className="text-xl text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.label}
@@ -88,9 +98,9 @@ const NavBar = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </motion.div>
             )}
-        </nav>
+        </motion.nav>
     );
 };
 

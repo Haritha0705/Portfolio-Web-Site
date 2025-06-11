@@ -3,6 +3,7 @@ import MainImg from "../assets/IMG_3463.jpg";
 import Button from "../Components/Button.tsx";
 import { Github, Linkedin, Twitter , ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const HomePage: React.FC = () => {
     const handleProjectsClick = () => {
@@ -18,7 +19,11 @@ const HomePage: React.FC = () => {
         <section id="home" className="w-full min-h-screen pt-[80px] flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors">
 
             {/* Text Section */}
-            <div className="w-full md:w-1/2 text-center md:text-left space-y-6 sm:space-y-8">
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="w-full md:w-1/2 text-center md:text-left space-y-6 sm:space-y-8">
                 <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-black dark:text-white leading-tight">
                     Hi, I'm <span className="text-blue-600 dark:text-blue-500 font-display">Haritha Wikramasinha</span>
                 </h1>
@@ -61,16 +66,20 @@ const HomePage: React.FC = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Image Section */}
-            <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-100 lg:h-100 rounded-full overflow-hidden shadow-xl">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-100 lg:h-100 rounded-full overflow-hidden shadow-xl">
                 <img
                     src={MainImg}
                     alt="Haritha Wikramasinha"
                     className="w-full h-full object-cover"
                 />
-            </div>
+            </motion.div>
         </section>
     );
 };

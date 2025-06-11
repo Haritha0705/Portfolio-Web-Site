@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Title from "../Components/Title.tsx";
 import ProjectCard from "../Components/ProjectCard.tsx";
 import Button from "../Components/Button.tsx";
+import { motion } from "framer-motion";
 
 // Demo project data
 const projects = [
@@ -52,6 +53,19 @@ const projects = [
 
 const categories = ["All", "Web", "Mobile", "UI/UX"];
 
+const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i = 0) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.2,
+            duration: 0.6,
+            ease: "easeOut",
+        },
+    }),
+};
+
 const ProjectPage: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState("All");
 
@@ -64,17 +78,30 @@ const ProjectPage: React.FC = () => {
         <section id="project" className="w-full pt-[80px] flex flex-col items-center justify-center gap-10 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors duration-300">
 
             {/* Title + Description */}
-            <div className="max-w-3xl text-center">
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+
+                className="max-w-3xl text-center">
                 <Title title="My Projects" />
                 <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                     Here are some of my recent projects. Each one was carefully crafted to solve specific problems and showcase different skills in my toolkit.
                 </p>
-            </div>
+            </motion.div>
 
             {/* Filter Buttons */}
-            <div className="flex flex-wrap justify-center gap-4">
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                custom={1}
+                className="flex flex-wrap justify-center gap-4">
                 {categories.map((category) => (
-                    <button
+                    <motion.button
+
                         key={category}
                         onClick={() => setActiveCategory(category)}
                         className={`px-6 py-2 rounded-3xl text-sm font-medium cursor-pointer transition-all 
@@ -83,23 +110,31 @@ const ProjectPage: React.FC = () => {
                                 ? "bg-blue-600 dark:bg-blue-500 text-white dark:text-gray-100"
                                 : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 "
                         }`}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.2 }}
                     >
                         {category}
-                    </button>
+                    </motion.button>
                 ))}
-            </div>
+            </motion.div>
 
             {/* Projects Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-                {filteredProjects.map((project) => (
-                    <ProjectCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        imageUrl={project.imageUrl}
-                        category={project.category}/>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                {filteredProjects.map((project,index) => (
+                    <motion.div key={project.id} custom={index} variants={fadeInUp}>
+                        <ProjectCard
+                            title={project.title}
+                            description={project.description}
+                            imageUrl={project.imageUrl}
+                            category={project.category}
+                        />
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
 
             {/* See More Button */}
             <Button

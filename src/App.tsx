@@ -8,15 +8,12 @@ import GetInTouchPage from "./Sections/GetInTouchPage.tsx";
 import NavBar from "./Components/NavBar.tsx";
 import Footer from "./Components/Footer.tsx";
 
-
-
 const App: React.FC = () => {
     return (
         <BrowserRouter>
             <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
                 <NavBar/>
                 <main>
-                    {/*className={'pt-[70px]'}*/}
                     <HomePage />
                     <AboutPage />
                     <SkillsPage />
