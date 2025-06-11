@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import Title from "../Components/Title.tsx";
 import { LucideMail, Phone, LucideMapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
 import Button from "../Components/Button.tsx";
@@ -21,6 +21,8 @@ const fadeUp = {
 
 const GetInTouchPage: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
@@ -33,10 +35,21 @@ const GetInTouchPage: React.FC = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    setSuccessMessage('Message sent successfully!');
+                    setErrorMessage('');
+                    form.current?.reset(); // Clear input fields
+
+                    setTimeout(() => {
+                        setSuccessMessage('');
+                    }, 4000);
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    setErrorMessage(`Failed to send message. Please try again later. ${error}`);
+                    setSuccessMessage('');
+
+                    setTimeout(() => {
+                        setErrorMessage('');
+                    }, 4000);
                 },
             );
     };
@@ -142,6 +155,18 @@ const GetInTouchPage: React.FC = () => {
                     custom={6}
                 >
                     <h3 className="text-xl font-semibold text-black dark:text-white">Send Me a Message</h3>
+
+                    {/* Message alerts */}
+                    {successMessage && (
+                        <div className="p-3 text-green-600 bg-green-100 dark:bg-green-800 rounded-md">
+                            {successMessage}
+                        </div>
+                    )}
+                    {errorMessage && (
+                        <div className="p-3 text-red-600 bg-red-100 dark:bg-red-800 rounded-md">
+                            {errorMessage}
+                        </div>
+                    )}
 
                     <div className="space-y-4">
                         {[
