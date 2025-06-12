@@ -1,5 +1,5 @@
 import React from 'react';
-import MainImg from "../assets/IMG_3463.jpg";
+import MainImg from "../assets/IMG_0415.jpg";
 import Button from "../Components/Button.tsx";
 import { Github, Linkedin, Twitter , ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
