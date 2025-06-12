@@ -158,15 +158,16 @@ const GetInTouchPage: React.FC = () => {
 
                     {/* Message alerts */}
                     {successMessage && (
-                        <div className="p-3 text-green-600 bg-green-100 dark:bg-green-800 rounded-md">
-                            {successMessage}
+                        <div className="p-4 mb-4 rounded-lg border border-green-300 dark:border-green-600 bg-green-50 dark:bg-green-900 text-green-800 dark:text-green-200 shadow-md transition-all duration-300">
+                             {successMessage}
                         </div>
                     )}
                     {errorMessage && (
-                        <div className="p-3 text-red-600 bg-red-100 dark:bg-red-800 rounded-md">
-                            {errorMessage}
+                        <div className="p-4 mb-4 rounded-lg border border-red-300 dark:border-red-600 bg-red-50 dark:bg-red-900 text-red-800 dark:text-red-200 shadow-md transition-all duration-300">
+                             {errorMessage}
                         </div>
                     )}
+
 
                     <div className="space-y-4">
                         {[
