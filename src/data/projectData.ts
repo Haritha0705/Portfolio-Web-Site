@@ -2,6 +2,7 @@ import FitnessApp from "../assets/FitnessApp.png"
 import GrabIT from "../assets/GrabIT.png"
 import Portfolio from "../assets/myWeb.png"
 import Etutor from "../assets/etutor.png"
+import Student_Management from "../assets/Student Management.jpeg"
 
 export const projects = [
     {
@@ -33,7 +34,7 @@ export const projects = [
         title: "Student-Management-System",
         description: "Content management system for writers and bloggers.",
         technology: ["React","Node js"],
-        image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=800&q=80",
+        image: Student_Management,
         category: "Web",
     },
     {
@@ -41,7 +42,7 @@ export const projects = [
         title: " Library Management System",
         description: "Mobile app to plan and organize travel experiences.",
         technology: ["React","Node js"],
-        image: "https://images.unsplash.com/photo-1524850301259-7729d41d11d9?q=80&w=3494&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Web",
     },
     {
