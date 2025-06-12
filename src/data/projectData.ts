@@ -1,6 +1,7 @@
-import Etutor from "../assets/Homepage.jpg"
 import FitnessApp from "../assets/FitnessApp.png"
 import GrabIT from "../assets/GrabIT.png"
+import Portfolio from "../assets/myWeb.png"
+import Etutor from "../assets/etutor.png"
 
 export const projects = [
     {
@@ -48,7 +49,7 @@ export const projects = [
         title: "Portfolio Website",
         description: "Personal portfolio to showcase my projects and skills.",
         technology: ["React","Vite","TypeScript","Tailwind CSS","Motion","EmailJS"],
-        image: "https://images.unsplash.com/photo-1642132652798-ae887edb9e9d?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: Portfolio,
         category: "Web",
     },
 ];
