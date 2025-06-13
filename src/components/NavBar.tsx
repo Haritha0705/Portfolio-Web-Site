@@ -66,13 +66,13 @@ const NavBar = () => {
                 <div className="flex items-center gap-4">
                     <button
                         onClick={toggleTheme}
-                        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white"
+                        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white cursor-pointer"
                     >
                         {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
 
                     <button className="md:hidden" onClick={toggleMenu}>
-                        {isMenuOpen ? <X  size={24} className={'text-black dark:text-white'} /> : <MenuIcon className={'text-black dark:text-white'} size={24} />}
+                        {isMenuOpen ? <X  size={24} className={'text-black dark:text-white cursor-pointer'} /> : <MenuIcon className={'text-black dark:text-white cursor-pointer'} size={24} />}
                     </button>
                 </div>
             </div>

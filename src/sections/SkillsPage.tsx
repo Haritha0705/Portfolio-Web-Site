@@ -1,6 +1,6 @@
 import React from "react";
-import Title from "../Components/Title.tsx";
-import SkillCard from "../Components/SkillCard.tsx";
+import Title from "../components/Title.tsx";
+import SkillCard from "../components/SkillCard.tsx";
 import { motion } from "framer-motion";
 
 const fadeInUp = {

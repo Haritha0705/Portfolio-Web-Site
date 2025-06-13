@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Title from "../Components/Title.tsx";
-import ProjectCard from "../Components/ProjectCard.tsx";
-import Button from "../Components/Button.tsx";
+import Title from "../components/Title.tsx";
+import ProjectCard from "../components/ProjectCard.tsx";
+import Button from "../components/Button.tsx";
 import { motion } from "framer-motion";
 import {projects} from "../data/projectData.ts"
 

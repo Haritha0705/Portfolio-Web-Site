@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import AboutPage from "./Sections/AboutPage.tsx";
-import SkillsPage from "./Sections/SkillsPage.tsx";
-import ProjectPage from "./Sections/ProjectPage.tsx";
-import GetInTouchPage from "./Sections/GetInTouchPage.tsx";
-import NavBar from "./Components/NavBar.tsx";
-import Footer from "./Components/Footer.tsx";
-import HomePage from "./Sections/HomePage.tsx";
-import LoadingPage from "./Sections/LoadingPage.tsx";
+import AboutPage from "./sections/AboutPage.tsx";
+import SkillsPage from "./sections/SkillsPage.tsx";
+import ProjectPage from "./sections/ProjectPage.tsx";
+import GetInTouchPage from "./sections/GetInTouchPage.tsx";
+import NavBar from "./components/NavBar.tsx";
+import Footer from "./components/Footer.tsx";
+import HomePage from "./sections/HomePage.tsx";
+import LoadingPage from "./sections/LoadingPage.tsx";
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);

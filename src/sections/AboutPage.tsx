@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from "../Components/Title.tsx";
-import AboutCard from "../Components/AboutCard.tsx";
-import { Code, GraduationCap, LucideShoppingBag } from "lucide-react";
+import Title from "../components/Title.tsx";
+import AboutCard from "../components/AboutCard.tsx";
+import { Code, GraduationCap } from "lucide-react";
 import { motion } from 'framer-motion';
 
 const AboutPage: React.FC = () => {
@@ -30,18 +30,24 @@ const AboutPage: React.FC = () => {
                 <AboutCard
                     icon={<Code className="text-blue-600 dark:text-blue-500" size={40} />}
                     title="My Approach"
-                    text={`I believe in clean, readable code and user-centered design. My goal is to create applications that are not only functional but also intuitive and enjoyable to use. I'm passionate about web standards, accessibility, and performance optimization.`}
+                    text={`I focus on building efficient, secure, and user-friendly applications by understanding real user needs. I write clean, maintainable code and follow modern development best practices. Whether working on frontend or backend, I aim for scalable and reliable solutions.
+
+I’m always learning new technologies and improving my skills to deliver high-quality results. For me, development is about creating impactful solutions and growing with every project.`}
                 />
                 <AboutCard
                     icon={<GraduationCap className="text-blue-600 dark:text-blue-500" size={40} />}
                     title="Education"
-                    text={`🎓 BSc in Computer Science\n🏫 University of Technology\n📅 2015 - 2019\n\n💻 Full Stack Bootcamp\n📍 Tech Academy\n📅 2020`}
+                    text={`• School\nSt. Aloysius' College\n2009 – 2022
+                        
+                        • Foundation in Computer Software Engineering
+                        Informatics Institute of Technology (IIT Campus)
+                        Sep 2023 – Sep 2024
+                        
+                        • BSc in Computer Software Engineering
+                        University of Westminster
+                        Jan 2025 – Sep 2028`}
                 />
-                <AboutCard
-                    icon={<LucideShoppingBag className="text-blue-600 dark:text-blue-500" size={40} />}
-                    title="Experience"
-                    text={`🧑‍💻 Senior Frontend Developer\n🏢 TechCorp Inc.\n📅 2021 - Present\n\n🌐 Web Developer\n🏢 Digital Solutions Agency\n📅 2019 - 2021`}
-                />
+
             </motion.div>
 
             {/* Developer Bio */}
@@ -55,14 +61,10 @@ const AboutPage: React.FC = () => {
                     Who am I?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg leading-relaxed whitespace-pre-line tracking-wide">
-                    I'm a passionate full-stack developer with over 5 years of experience building web applications.
-                    I specialize in JavaScript, React, Node.js, and modern web technologies.
-
-                    My journey in web development began during my computer science studies, and I've been in love
-                    with creating for the web ever since. When I'm not coding, you can find me hiking, reading tech blogs,
-                    or experimenting with new frameworks and tools.
-
-                    I'm always eager to learn and grow as a developer.
+                    My name is Haritha Wikramasinha. I’m a 22-year-old fullstack developer and a passionate tech explorer currently studying at the University of Westminster. I specialize in building modern web and mobile applications using the latest technologies.
+                    On the frontend, I focus on creating clean user interfaces, seamless user experiences, and performance-driven applications. On the backend, I develop RESTful APIs, build scalable architectures, and prioritize secure solutions.
+                    As a mobile developer, I enjoy designing and building responsive, high-quality mobile apps. I’m always learning, experimenting, and exploring new tools, frameworks, and ideas to stay ahead in the tech world.
+                    Whether it's a web app, a mobile solution, or a full-stack system, I’m always ready to build something impactful.
                 </p>
             </motion.div>
         </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import MainImg from "../assets/IMG_0415.jpg";
-import Button from "../Components/Button.tsx";
-import { Github, Linkedin, Twitter , ArrowRight, Download } from "lucide-react";
+import Button from "../components/Button.tsx";
+import { Github, Linkedin , ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 
@@ -11,9 +11,6 @@ const HomePage: React.FC = () => {
         contactSection?.scrollIntoView({ behavior: "smooth" });
     };
 
-    const downloadCV = () => {
-        alert("Download CV")
-    };
 
     return (
         <section id="home" className="w-full min-h-screen pt-[80px] flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-4 sm:px-6 lg:px-10 py-12 bg-white dark:bg-black transition-colors">
@@ -44,13 +41,14 @@ const HomePage: React.FC = () => {
                         className="text-white dark:text-gray-100 justify-between gap-3 items-center flex"
                         icon={<ArrowRight />}
                     />
-                    <Button
-                        text="Download CV"
-                        bgColor="bg-white dark:bg-gray-800"
-                        onClick={downloadCV}
-                        className="justify-between gap-3 items-center flex border border-blue-600 dark:border-blue-500 text-blue-600  dark:text-blue-500"
-                        icon={<Download />}
-                    />
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <Button
+                            text="Download CV"
+                            bgColor="bg-white dark:bg-gray-800"
+                            className="justify-between gap-3 items-center flex border border-blue-600 dark:border-blue-500 text-blue-600  dark:text-blue-500"
+                            icon={<Download />}
+                        />
+                    </a>
                 </div>
 
                 <div className="flex gap-5 justify-center md:justify-start mt-4">
@@ -60,9 +58,6 @@ const HomePage: React.FC = () => {
                         </Link>
                         <Link to={'https://linkedin.com/in/your-username'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
                             <Linkedin className="text-gray-600 dark:text-gray-300" />
-                        </Link>
-                        <Link to={'https://linkedin.com/in/your-username'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
-                            <Twitter className="text-gray-600 dark:text-gray-300" />
                         </Link>
                     </div>
                 </div>

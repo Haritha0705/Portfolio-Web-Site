@@ -1,7 +1,7 @@
 import React, { useRef,useState } from 'react';
-import Title from "../Components/Title.tsx";
-import { LucideMail, Phone, LucideMapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
-import Button from "../Components/Button.tsx";
+import Title from "../components/Title.tsx";
+import { LucideMail, Phone, LucideMapPin, Linkedin, Github, Send } from "lucide-react";
+import Button from "../components/Button.tsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
@@ -136,9 +136,6 @@ const GetInTouchPage: React.FC = () => {
                         </Link>
                         <Link to="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
                             <Linkedin className="text-gray-600 dark:text-gray-300" />
-                        </Link>
-                        <Link to="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
-                            <Twitter className="text-gray-600 dark:text-gray-300" />
                         </Link>
                     </motion.div>
                 </motion.div>
