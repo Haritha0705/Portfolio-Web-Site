@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
                         className="text-white dark:text-gray-100 justify-between gap-3 items-center flex"
                         icon={<ArrowRight />}
                     />
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/14ls8whTLtdx-XYHVhMI7JNqiFfN-4eRd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <Button
                             text="Download CV"
                             bgColor="bg-white dark:bg-gray-800"
