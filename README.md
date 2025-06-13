@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# 💼 Haritha Wikramasinha - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal **portfolio website**, built to showcase my work, skills, and experience as a **Full Stack Developer**. The site is responsive, fast, and built using modern frontend technologies.
 
-Currently, two official plugins are available:
+![Responsive Preview](https://i.imgur.com/oic2yMj.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [View Portfolio](https://your-live-link.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧑‍💻 About Me
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+I'm **Haritha Wikramasinha**, a Full Stack Developer who loves building accessible, performant, and user-friendly web applications. This portfolio reflects my work and tech journey.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚙️ Tech Stack
+
+| Technology        | Description                            |
+|-------------------|----------------------------------------|
+| **React**         | UI library for building the website     |
+| **Vite**          | Fast and modern build tool              |
+| **Tailwind CSS**  | Utility-first CSS framework             |
+| **Framer Motion** | For smooth animations and transitions   |
+| **EmailJS**       | For contact form email functionality    |
+| **TypeScript**    | Type-safe development                   |
+
+---
+
+## 📱 Features
+
+- 💻 Fully responsive layout (mobile, tablet, desktop)
+- 🌙 Dark mode support
+- ✨ Smooth animations using Framer Motion
+- 📧 Functional contact form using EmailJS
+- 📄 Downloadable CV
+- 🔗 Social media integration
+- ⚡ Lightning-fast performance using Vite
+
+---
+
+## 📁 Folder Structure
+
+```bash
+📦 haritha-portfolio
+ ┣ 📂 public
+ ┃ ┗ 📜 index.html
+ ┣ 📂 src
+ ┃ ┣ 📂 assets          # Static assets (images, icons, etc.)
+ ┃ ┣ 📂 components      # Reusable UI components
+ ┃ ┣ 📂 sections           # Individual pages (Home, About, etc.)
+ ┣ 📜 tailwind.config.ts
+ ┣ 📜 tsconfig.json
+ ┣ 📜 vite.config.ts
+ ┗ 📜 README.md
