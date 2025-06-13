@@ -95,7 +95,7 @@ const GetInTouchPage: React.FC = () => {
                         {
                             icon: <Phone className="text-white dark:text-gray-100" />,
                             label: "Phone",
-                            value: "+94 76 123 4567",
+                            value: "+94 76 796 2023",
                         },
                         {
                             icon: <LucideMapPin className="text-white dark:text-gray-100" />,

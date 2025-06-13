@@ -88,7 +88,6 @@ const ProjectPage: React.FC = () => {
                             image={project.image}
                             technology={project.technology}
                             category={project.category}
-                            live={project.live}
                             code={project.code}
                         />
                     </motion.div>
@@ -96,11 +95,13 @@ const ProjectPage: React.FC = () => {
             </motion.div>
 
             {/* See More Button */}
-            <Button
-                text="See More on GitHub"
-                bgColor="bg-blue-600 dark:bg-blue-500"
-                className="flex items-center gap-3 px-6 py-2 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
-            />
+            <a href={'https://github.com/Haritha0705'} target="_blank">
+                <Button
+                    text="See More on GitHub"
+                    bgColor="bg-blue-600 dark:bg-blue-500"
+                    className="flex items-center gap-3 px-6 py-2 rounded-lg text-white dark:text-gray-100 hover:opacity-90 transition-all"
+                />
+            </a>
         </section>
     );
 };

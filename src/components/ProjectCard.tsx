@@ -1,5 +1,5 @@
 import React from 'react';
-import { FolderOpen, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { motion } from "motion/react"
 
 interface ProjectCardProps {
@@ -8,12 +8,11 @@ interface ProjectCardProps {
     image: any;
     category: string;
     technology: string[];
-    live:string;
     code:string;
 
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ technology ,title, description, image, live, code }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ technology ,title, description, image, code }) => {
     return (
 
         <motion.div
@@ -34,9 +33,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ technology ,title, descriptio
                     ))}
                 </div>
                 <div className="flex justify-between items-center pt-4 text-sm">
-                    <a href={live} target="_blank" className="text-blue-600 dark:text-blue-500 hover:underline flex items-center gap-1">
-                        <FolderOpen size={18} /> Live Demo
-                    </a>
                     <a href={code} target="_blank"  className="text-gray-600 dark:text-gray-300 hover:underline flex items-center gap-1">
                         <Github size={18} /> Code
                     </a>

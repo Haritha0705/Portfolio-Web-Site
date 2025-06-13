@@ -12,7 +12,6 @@ export const projects = [
         image: Etutor,
         technology: ["React","Node js"],
         category: "Web",
-        live: "#",
         code: "https://github.com/Haritha0705/etutor-lms"
     },
     {
@@ -22,7 +21,6 @@ export const projects = [
         image: FitnessApp,
         technology: ["Dart","Flutter"],
         category: "Mobile",
-        live: "#",
         code: "https://github.com/Haritha0705/workout_planner_app.git"
     },
     {
@@ -32,7 +30,6 @@ export const projects = [
         image: GrabIT,
         technology: ["Figma"],
         category: "UI/UX",
-        live: "#",
         code: "https://github.com/Haritha0705/Grab_IT_Mobile_App_UI.git"
     },
     {
@@ -42,7 +39,6 @@ export const projects = [
         technology: ["React","Node js","Vite","Tailwind CSS"],
         image: Student_Management,
         category: "Web",
-        live: "#",
         code: "https://github.com/Haritha0705/Student-Management-System.git"
     },
     {
@@ -52,7 +48,6 @@ export const projects = [
         technology: ["React","Node js","Vite","Tailwind CSS"],
         image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Web",
-        live: "#",
         code: "https://github.com/Haritha0705/library_management_system.git"
     },
     {
@@ -62,7 +57,6 @@ export const projects = [
         technology: ["React","Vite","TypeScript","Tailwind CSS","Motion","EmailJS"],
         image: Portfolio,
         category: "Web",
-        live: "#",
         code: "https://github.com/Haritha0705/Portfolio-Web-Site.git"
     },
 ];
