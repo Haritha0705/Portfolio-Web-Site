@@ -37,13 +37,13 @@ I’m always learning new technologies and improving my skills to deliver high-q
                 <AboutCard
                     icon={<GraduationCap className="text-blue-600 dark:text-blue-500" size={40} />}
                     title="Education"
-                    text={`• School\nSt. Aloysius' College\n2009 – 2022
+                    text={`• School\nSt. Aloysius' College\n2008 – 2022
                         
-                        • Foundation in Computer Software Engineering
+                        • Foundation in Software Engineering
                         Informatics Institute of Technology (IIT Campus)
                         Sep 2023 – Sep 2024
                         
-                        • BSc in Computer Software Engineering
+                        • BEng (Hons) Software Engineering
                         University of Westminster
                         Jan 2025 – Sep 2028`}
                 />
