@@ -88,6 +88,8 @@ const ProjectPage: React.FC = () => {
                             image={project.image}
                             technology={project.technology}
                             category={project.category}
+                            live={project.live}
+                            code={project.code}
                         />
                     </motion.div>
                 ))}

@@ -12,6 +12,8 @@ export const projects = [
         image: Etutor,
         technology: ["React","Node js"],
         category: "Web",
+        live: "#",
+        code: "https://github.com/Haritha0705/etutor-lms"
     },
     {
         id: 2,
@@ -20,6 +22,8 @@ export const projects = [
         image: FitnessApp,
         technology: ["Dart","Flutter"],
         category: "Mobile",
+        live: "#",
+        code: "https://github.com/Haritha0705/workout_planner_app.git"
     },
     {
         id: 3,
@@ -28,22 +32,28 @@ export const projects = [
         image: GrabIT,
         technology: ["Figma"],
         category: "UI/UX",
+        live: "#",
+        code: "https://github.com/Haritha0705/Grab_IT_Mobile_App_UI.git"
     },
     {
         id: 4,
         title: "Student-Management-System",
         description: "Content management system for writers and bloggers.",
-        technology: ["React","Node js"],
+        technology: ["React","Node js","Vite","Tailwind CSS"],
         image: Student_Management,
         category: "Web",
+        live: "#",
+        code: "https://github.com/Haritha0705/Student-Management-System.git"
     },
     {
         id: 5,
         title: " Library Management System",
         description: "Mobile app to plan and organize travel experiences.",
-        technology: ["React","Node js"],
+        technology: ["React","Node js","Vite","Tailwind CSS"],
         image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Web",
+        live: "#",
+        code: "https://github.com/Haritha0705/library_management_system.git"
     },
     {
         id: 6,
@@ -52,5 +62,7 @@ export const projects = [
         technology: ["React","Vite","TypeScript","Tailwind CSS","Motion","EmailJS"],
         image: Portfolio,
         category: "Web",
+        live: "#",
+        code: "https://github.com/Haritha0705/Portfolio-Web-Site.git"
     },
 ];

@@ -30,7 +30,7 @@ const SkillsPage: React.FC = () => {
             >
                 <Title title="My Skills" />
                 <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
-                    I've worked with a variety of technologies in the web development world. Here's an overview of my technical skills and proficiency levels.
+                    I've worked with a variety of technologies in the development world. Here's an overview of my technical skills and proficiency levels.
                 </p>
             </motion.div>
 
