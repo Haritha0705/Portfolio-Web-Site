@@ -6,7 +6,7 @@ This is my personal **portfolio website**, built to showcase my work, skills, an
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio](https://your-live-link.com)
+👉 [View Portfolio](https://haritha-portfolio.vercel.app/)
 
 ---
 
