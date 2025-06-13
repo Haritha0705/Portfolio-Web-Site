@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar.tsx";
 import Footer from "./components/Footer.tsx";
 import HomePage from "./sections/HomePage.tsx";
 import LoadingPage from "./sections/LoadingPage.tsx";
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
     return (
         <BrowserRouter>
+            <Analytics />
             <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
                 <NavBar />
                 <main>
