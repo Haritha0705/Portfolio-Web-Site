@@ -53,10 +53,10 @@ const HomePage: React.FC = () => {
 
                 <div className="flex gap-5 justify-center md:justify-start mt-4">
                     <div className="flex items-center gap-4">
-                        <Link to={'https://github.com/your-username'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
+                        <Link to={'https://github.com/Haritha0705'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
                             <Github className="text-gray-600 dark:text-gray-300" />
                         </Link>
-                        <Link to={'https://linkedin.com/in/your-username'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
+                        <Link to={'https://www.linkedin.com/in/haritha-wikramasinha-11ab05271/'} target="_blank" rel="noopener noreferrer" className="bg-gray-100 dark:bg-gray-800 p-4 rounded-full hover:scale-105 transition-transform">
                             <Linkedin className="text-gray-600 dark:text-gray-300" />
                         </Link>
                     </div>
