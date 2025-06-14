@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ technology ,title, descriptio
             transition={{duration:0.5}}
             whileHover={{scale:1,y:-5,boxShadow:'0px 10px 20px rgba(0,0,0,0.2)'}}
             className="w-full bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition-colors hover:scale-105 hover:shadow-xl cursor-pointer">
-            <img src={image} alt={title} className="w-full h-40 object-cover" />
+            <img src={image} loading="lazy" alt={title} className="w-full h-40 object-cover" />
             <div className="p-4 space-y-2">
                 <h5 className="text-lg font-semibold text-black dark:text-white">{title}</h5>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>

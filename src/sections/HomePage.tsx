@@ -71,6 +71,7 @@ const HomePage: React.FC = () => {
                 className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-100 lg:h-100 rounded-full overflow-hidden shadow-xl">
                 <img
                     src={MainImg}
+                    loading="lazy"
                     alt="Haritha Wikramasinha"
                     className="w-full h-full object-cover"
                 />
