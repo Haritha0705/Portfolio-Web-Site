@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import AboutPage from "./sections/AboutPage.tsx";
 import SkillsPage from "./sections/SkillsPage.tsx";
 import ProjectPage from "./sections/ProjectPage.tsx";
@@ -24,7 +23,7 @@ const App: React.FC = () => {
     }
 
     return (
-        <BrowserRouter>
+        <>
             <Analytics />
             <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
                 <NavBar />
@@ -37,7 +36,8 @@ const App: React.FC = () => {
                 </main>
                 <Footer />
             </div>
-        </BrowserRouter>
+        </>
+
     );
 };
 
