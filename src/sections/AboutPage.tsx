@@ -61,7 +61,7 @@ I’m always learning new technologies and improving my skills to deliver high-q
                     Who am I?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg leading-relaxed whitespace-pre-line tracking-wide">
-                    My name is Haritha Wikramasinha. I’m a 22-year-old fullstack developer and a passionate tech explorer currently studying at the University of Westminster. I specialize in building modern web and mobile applications using the latest technologies.
+                    My name is Haritha Wickremesinghe. I’m a 22-year-old fullstack developer and a passionate tech explorer currently studying at the University of Westminster. I specialize in building modern web and mobile applications using the latest technologies.
                     On the frontend, I focus on creating clean user interfaces, seamless user experiences, and performance-driven applications. On the backend, I develop RESTful APIs, build scalable architectures, and prioritize secure solutions.
                     As a mobile developer, I enjoy designing and building responsive, high-quality mobile apps. I’m always learning, experimenting, and exploring new tools, frameworks, and ideas to stay ahead in the tech world.
                     Whether it's a web app, a mobile solution, or a full-stack system, I’m always ready to build something impactful.

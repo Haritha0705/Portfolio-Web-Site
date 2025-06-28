@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full md:w-1/2 text-center md:text-left space-y-6 sm:space-y-8">
                 <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-black dark:text-white leading-tight">
-                    Hi, I'm <span className="text-blue-600 dark:text-blue-500 font-display">Haritha Wikramasinha</span>
+                    Hi, I'm <span className="text-blue-600 dark:text-blue-500 font-display">Haritha Wickremesinghe</span>
                 </h1>
 
                 <h3 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-gray-600 dark:text-gray-300">
